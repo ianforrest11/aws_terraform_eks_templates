@@ -33,3 +33,17 @@ variable "eks_version" {
   nullable    = false
   type        = string
 }
+
+variable "endpoint_public_access" {
+  description = "booleon to allow public access to EKS cluster endpoint"
+  nullable    = false
+  type        = bool
+  default     = true
+}
+
+variable "endpoint_private_access" {
+  description = "booleon to allow private access to EKS cluster endpoint"
+  nullable    = false
+  type        = bool
+  default     = false
+}
