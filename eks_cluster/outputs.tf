@@ -5,7 +5,7 @@ output "cluster_endpoint" {
 
 output "cluster_security_group_id" {
   description = "The security group ID created by EKS for the cluster."
-  value       = aws_eks_cluster.this.cluster_security_group_id
+  value       = data.aws_eks_cluster.this.resources_vpc_config.cluster_security_group_id
 }
 
 output "cluster_certificate_authority_data" {
