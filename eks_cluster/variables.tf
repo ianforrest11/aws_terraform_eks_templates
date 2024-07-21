@@ -47,3 +47,17 @@ variable "endpoint_private_access" {
   type        = bool
   default     = false
 }
+
+# variable for user ARNs
+variable "user_arns" {
+  description = "A list of IAM user ARNs to add to the aws-auth ConfigMap."
+  nullable    = false
+  type        = list(string)
+}
+
+# variable for role ARNs
+variable "role_arns" {
+  description = "A list of IAM role ARNs to add to the aws-auth ConfigMap."
+  nullable    = false
+  type        = list(string)
+}

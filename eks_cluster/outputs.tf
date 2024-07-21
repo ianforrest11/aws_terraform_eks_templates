@@ -12,3 +12,9 @@ output "cluster_certificate_authority_data" {
   description = "The certificate data for the EKS control plane."
   value       = aws_eks_cluster.this.certificate_authority.0.data
 }
+
+#output for cluster name
+output "cluster_name" {
+  description = "The name of the EKS cluster."
+  value       = aws_eks_cluster.this.name
+}
