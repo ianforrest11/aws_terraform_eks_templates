@@ -16,6 +16,12 @@ variable "http_put_response_hop_limit" {
   default     = 2
 }
 
+variable "http_endpoint" {
+  description = "Whether the metadata service is available"
+  type        = string
+  default     = "enabled"
+}
+
 variable "http_tokens" {
   description = "The state of token usage for your instance metadata requests. Use 'required' to enforce the use of IMDSv2."
   type        = string
