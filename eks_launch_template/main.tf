@@ -12,6 +12,7 @@ resource "aws_launch_template" "this" {
   metadata_options {
     http_tokens                 = var.http_tokens
     http_put_response_hop_limit = var.http_put_response_hop_limit
+    instance_metadata_tags      = var.instance_metadata_tags
   }
   network_interfaces {
     security_groups = var.node_security_groups

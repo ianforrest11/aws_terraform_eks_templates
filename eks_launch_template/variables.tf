@@ -22,6 +22,12 @@ variable "http_tokens" {
   default     = "required"
 }
 
+variable "instance_metadata_tags" {
+  description = "determines whether instances created using the launch template will have metadata tags"
+  type        = string
+  default     = "enabled"
+}
+
 variable "image_id" {
   description = "id of ami image to use in eks node group launch template"
   nullable    = false
