@@ -1,7 +1,8 @@
 resource "aws_launch_template" "this" {
-  name_prefix   = "${var.node_group_name}_"
-  image_id      = var.image_id  # Specify the AMI ID or use a data source to fetch the latest AMI
-  key_name      = var.ec2_ssh_key
+  name_prefix            = "${var.node_group_name}_"
+  image_id               = var.image_id  # Specify the AMI ID or use a data source to fetch the latest AMI
+  key_name               = var.ec2_ssh_key
+  update_default_version = var.update_default_version
   tag_specifications {
     resource_type = var.resource_type
     tags = {

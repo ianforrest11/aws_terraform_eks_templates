@@ -62,3 +62,10 @@ variable "iam_instance_profile" {
   nullable    = false
   type        = string
 }
+
+variable "update_default_version" {
+  description = "boolean to specify to update default version of launch template to latest version"
+  nullable    = false
+  type        = bool
+  default     = true
+}
