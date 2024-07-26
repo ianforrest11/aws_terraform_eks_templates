@@ -56,3 +56,9 @@ variable "resource_type" {
   description = "resource type of launch template tags"
   type        = string
 }
+
+variable "iam_instance_profile" {
+  description = "name of the instance profile associated with the node group role"
+  nullable    = false
+  type        = string
+}

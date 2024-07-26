@@ -9,6 +9,9 @@ resource "aws_launch_template" "this" {
       Environment = var.environment
     }
   }
+ iam_instance_profile {
+    name = var.iam_instance_profile
+  }
   metadata_options {
     http_endpoint               = var.http_endpoint
     http_tokens                 = var.http_tokens
