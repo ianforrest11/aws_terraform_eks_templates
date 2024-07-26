@@ -11,9 +11,6 @@ resource "aws_launch_template" "this" {
       Environment       = var.environment
     }
   }
- iam_instance_profile {
-    name = var.iam_instance_profile
-  }
   instance_market_options {
     market_type = var.market_type
   }
