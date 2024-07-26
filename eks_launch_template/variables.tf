@@ -87,3 +87,9 @@ variable "k8s_cluster_dns_ip" {
   type        = string
   nullable    = false
 }
+
+variable "node_group_max_size" {
+  description = "The DNS IP address of the Kubernetes cluster"
+  type        = number
+  nullable    = false
+}
