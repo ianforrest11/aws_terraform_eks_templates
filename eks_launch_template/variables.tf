@@ -70,12 +70,6 @@ variable "user_data" {
   type        = string
 }
 
-variable "market_type" {
-  description = "set underlying ec2 configs to use spot instances"
-  nullable    = false
-  type        = string
-}
-
 variable "k8s_cluster_dns_ip" {
   description = "The DNS IP address of the Kubernetes cluster"
   type        = string

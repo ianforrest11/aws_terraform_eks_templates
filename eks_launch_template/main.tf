@@ -11,9 +11,6 @@ resource "aws_launch_template" "this" {
       Environment       = var.environment
     }
   }
-  instance_market_options {
-    market_type = var.market_type
-  }
   metadata_options {
     http_endpoint               = var.http_endpoint
     http_tokens                 = var.http_tokens
