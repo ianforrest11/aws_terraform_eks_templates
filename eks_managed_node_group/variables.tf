@@ -1,14 +1,14 @@
-variable "aws_launch_template" {
-  description = "The ID of the launch template to use for the node group."
-  nullable    = false
-  type        = string
-}
+# variable "aws_launch_template" {
+#   description = "The ID of the launch template to use for the node group."
+#   nullable    = false
+#   type        = string
+# }
 
-variable "aws_launch_template_version" {
-  description = "The version of the launch template to use for the node group."
-  nullable    = false
-  type        = string
-}
+# variable "aws_launch_template_version" {
+#   description = "The version of the launch template to use for the node group."
+#   nullable    = false
+#   type        = string
+# }
 
 variable "cluster_name" {
   description = "The name of the EKS cluster."
