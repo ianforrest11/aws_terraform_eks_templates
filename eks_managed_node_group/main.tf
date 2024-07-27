@@ -34,4 +34,5 @@ resource "aws_autoscaling_group_tag" "this" {
     value = "${var.node_group_name}_instance"
     propagate_at_launch = true
   }
+  depends_on = [aws_eks_node_group.this]
 }
