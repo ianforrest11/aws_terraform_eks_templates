@@ -31,7 +31,7 @@ resource "aws_autoscaling_group_tag" "this" {
 
   tag {
     key   = "Name"
-    value = var.node_group_name
+    value = "${var.node_group_name}_instance"
     propagate_at_launch = true
   }
 }
