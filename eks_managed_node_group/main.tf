@@ -9,10 +9,6 @@ resource "aws_eks_node_group" "this" {
     min_size      = var.min_size
   }
   instance_types  = var.instance_types
-  # launch_template {
-  #   id      = var.aws_launch_template
-  #   version = var.aws_launch_template_version
-  # }
   tags = {
     Name        = var.node_group_name
     Environment = var.environment
